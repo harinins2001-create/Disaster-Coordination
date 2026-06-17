@@ -77,8 +77,8 @@ npm install
 # Run development server
 npm run dev
 
-Backend Setup (C#)
-
+### Backend Setup (C#)
+```bash
 # Navigate to backend directory
 cd server
 
