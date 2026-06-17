@@ -1,0 +1,589 @@
+[
+  {
+    "ContainingType": "PrivateApi.Controllers.AssignmentController",
+    "Method": "ListByDisaster",
+    "RelativePath": "api/Assignment",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "disasterSlug",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "Tags": [
+      "Assignment"
+    ]
+  },
+  {
+    "ContainingType": "PrivateApi.Controllers.AssignmentController",
+    "Method": "Cancel",
+    "RelativePath": "api/Assignment/{disasterSlug}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "disasterSlug",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Tags": [
+      "Assignment"
+    ]
+  },
+  {
+    "ContainingType": "PrivateApi.Controllers.AssignmentController",
+    "Method": "SetStatus",
+    "RelativePath": "api/Assignment/{disasterSlug}/{userSub}/status",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "disasterSlug",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "userSub",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "PrivateApi.Controllers.AssignmentController\u002BStatusRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Tags": [
+      "Assignment"
+    ]
+  },
+  {
+    "ContainingType": "PrivateApi.Controllers.AssignmentController",
+    "Method": "ListMine",
+    "RelativePath": "api/Assignment/me",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "Tags": [
+      "Assignment"
+    ]
+  },
+  {
+    "ContainingType": "PrivateApi.Controllers.AssignmentController",
+    "Method": "Pledge",
+    "RelativePath": "api/Assignment/pledge",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "PrivateApi.Controllers.AssignmentController\u002BPledgeRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Tags": [
+      "Assignment"
+    ]
+  },
+  {
+    "ContainingType": "PrivateApi.Controllers.DisasterController",
+    "Method": "CreateDisaster",
+    "RelativePath": "api/Disaster",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Title",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Severity",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Location",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "RequiredVolunteers",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "RequiredResources",
+        "Type": "System.Collections.Generic.List\u00601[[Core.DTOs.RequiredResourceDTO, Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Photos",
+        "Type": "System.Collections.Generic.List\u00601[[Microsoft.AspNetCore.Http.IFormFile, Microsoft.AspNetCore.Http.Features, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "Tags": [
+      "Disaster"
+    ]
+  },
+  {
+    "ContainingType": "PrivateApi.Controllers.DisasterController",
+    "Method": "GetDisaster",
+    "RelativePath": "api/Disaster/{slug}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "slug",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Tags": [
+      "Disaster"
+    ]
+  },
+  {
+    "ContainingType": "PrivateApi.Controllers.DisasterController",
+    "Method": "UpdateDisaster",
+    "RelativePath": "api/Disaster/{slug}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "slug",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "PrivateApi.Controllers.DisasterController\u002BUpdateDisasterRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Tags": [
+      "Disaster"
+    ]
+  },
+  {
+    "ContainingType": "PrivateApi.Controllers.DisasterController",
+    "Method": "DeleteDisaster",
+    "RelativePath": "api/Disaster/{slug}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "slug",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Tags": [
+      "Disaster"
+    ]
+  },
+  {
+    "ContainingType": "PrivateApi.Controllers.DisasterController",
+    "Method": "Approve",
+    "RelativePath": "api/Disaster/{slug}/approve",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "slug",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Tags": [
+      "Disaster"
+    ]
+  },
+  {
+    "ContainingType": "PrivateApi.Controllers.DisasterController",
+    "Method": "Reject",
+    "RelativePath": "api/Disaster/{slug}/reject",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "slug",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "PrivateApi.Controllers.DisasterController\u002BRejectRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Tags": [
+      "Disaster"
+    ]
+  },
+  {
+    "ContainingType": "PrivateApi.Controllers.DisasterController",
+    "Method": "ListAll",
+    "RelativePath": "api/Disaster/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "Tags": [
+      "Disaster"
+    ]
+  },
+  {
+    "ContainingType": "PrivateApi.Controllers.DisasterController",
+    "Method": "ListMine",
+    "RelativePath": "api/Disaster/mine",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "Tags": [
+      "Disaster"
+    ]
+  },
+  {
+    "ContainingType": "PrivateApi.Controllers.DisasterController",
+    "Method": "ListPending",
+    "RelativePath": "api/Disaster/pending",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "Tags": [
+      "Disaster"
+    ]
+  },
+  {
+    "ContainingType": "PrivateApi.Controllers.DonationController",
+    "Method": "Create",
+    "RelativePath": "api/Donation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "PrivateApi.Controllers.DonationController\u002BCreateDonationRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Tags": [
+      "Donation"
+    ]
+  },
+  {
+    "ContainingType": "PrivateApi.Controllers.DonationController",
+    "Method": "ListByDisaster",
+    "RelativePath": "api/Donation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "disasterSlug",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "Tags": [
+      "Donation"
+    ]
+  },
+  {
+    "ContainingType": "PrivateApi.Controllers.DonationController",
+    "Method": "ListMine",
+    "RelativePath": "api/Donation/me",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "Tags": [
+      "Donation"
+    ]
+  },
+  {
+    "ContainingType": "PrivateApi.Controllers.ResourceController",
+    "Method": "GetResources",
+    "RelativePath": "api/Resource",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "disasterSlug",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "Tags": [
+      "Resource"
+    ]
+  },
+  {
+    "ContainingType": "PrivateApi.Controllers.ResourceController",
+    "Method": "Upsert",
+    "RelativePath": "api/Resource/{disasterSlug}/{itemType}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "disasterSlug",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "itemType",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "PrivateApi.Controllers.ResourceController\u002BUpsertResourceRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Tags": [
+      "Resource"
+    ]
+  },
+  {
+    "ContainingType": "PrivateApi.Controllers.ResourceController",
+    "Method": "Delete",
+    "RelativePath": "api/Resource/{disasterSlug}/{itemType}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "disasterSlug",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "itemType",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Tags": [
+      "Resource"
+    ]
+  },
+  {
+    "ContainingType": "PrivateApi.Controllers.UserController",
+    "Method": "List",
+    "RelativePath": "api/User",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "role",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "district",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "search",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "Tags": [
+      "User"
+    ]
+  },
+  {
+    "ContainingType": "PrivateApi.Controllers.UserController",
+    "Method": "AdminCreate",
+    "RelativePath": "api/User",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "PrivateApi.Controllers.UserController\u002BAdminCreateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Tags": [
+      "User"
+    ]
+  },
+  {
+    "ContainingType": "PrivateApi.Controllers.UserController",
+    "Method": "SetActive",
+    "RelativePath": "api/User/{sub}/active",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sub",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "PrivateApi.Controllers.UserController\u002BSetActiveRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Tags": [
+      "User"
+    ]
+  },
+  {
+    "ContainingType": "PrivateApi.Controllers.UserController",
+    "Method": "SetRoles",
+    "RelativePath": "api/User/{sub}/roles",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sub",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "PrivateApi.Controllers.UserController\u002BSetRolesRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Tags": [
+      "User"
+    ]
+  },
+  {
+    "ContainingType": "PrivateApi.Controllers.UserController",
+    "Method": "GetMe",
+    "RelativePath": "api/User/me",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "Tags": [
+      "User"
+    ]
+  },
+  {
+    "ContainingType": "PrivateApi.Controllers.UserController",
+    "Method": "UpdateMe",
+    "RelativePath": "api/User/me",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "PrivateApi.Controllers.UserController\u002BUpdateProfileRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "Tags": [
+      "User"
+    ]
+  },
+  {
+    "ContainingType": "PrivateApi.Controllers.UserController",
+    "Method": "UploadMyPhoto",
+    "RelativePath": "api/User/me/photo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ContentType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContentDisposition",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Headers",
+        "Type": "Microsoft.AspNetCore.Http.IHeaderDictionary",
+        "IsRequired": false
+      },
+      {
+        "Name": "Length",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "Tags": [
+      "User"
+    ]
+  }
+]

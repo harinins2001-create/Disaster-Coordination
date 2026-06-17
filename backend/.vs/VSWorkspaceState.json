@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\Core",
+    "\\src\\Core\\Helpers",
+    "\\src\\Core\\Infrastructure",
+    "\\src\\Core\\Infrastructure\\Persistence",
+    "\\src\\Core\\Infrastructure\\Persistence\\Services",
+    "\\src\\PrivateApi",
+    "\\src\\PrivateApi\\src",
+    "\\src\\PrivateApi\\src\\PrivateApi"
+  ],
+  "PreviewInSolutionExplorer": false
+}

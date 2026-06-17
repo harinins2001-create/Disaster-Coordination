@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\Desktop\\SLIIT MSc\\Year 01\\Sem 1\\RAD\\Archive\\backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F0E75A43-1CBF-4F81-9832-1A7A55709B51}|src\\PublicApi\\src\\PublicApi\\PublicApi.csproj|c:\\users\\user\\desktop\\sliit msc\\year 01\\sem 1\\rad\\archive\\backend\\src\\publicapi\\src\\publicapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0E75A43-1CBF-4F81-9832-1A7A55709B51}|src\\PublicApi\\src\\PublicApi\\PublicApi.csproj|solutionrelative:src\\publicapi\\src\\publicapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\Desktop\\SLIIT MSc\\Year 01\\Sem 1\\RAD\\Archive\\backend\\src\\PublicApi\\src\\PublicApi\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "src\\PublicApi\\src\\PublicApi\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\User\\Desktop\\SLIIT MSc\\Year 01\\Sem 1\\RAD\\Archive\\backend\\src\\PublicApi\\src\\PublicApi\\Controllers\\UserController.cs",
+              "RelativeToolTip": "src\\PublicApi\\src\\PublicApi\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-08T15:32:51.344Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

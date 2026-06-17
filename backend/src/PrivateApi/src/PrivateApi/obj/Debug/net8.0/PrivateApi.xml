@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PrivateApi</name>
+    </assembly>
+    <members>
+        <member name="T:PrivateApi.Controllers.DisasterController">
+            <summary>
+            Admin CRUD endpoints for disasters.
+            </summary>
+        </member>
+        <member name="M:PrivateApi.Controllers.DisasterController.ListPending(System.Threading.CancellationToken)">
+            <summary>List pending disaster submissions (admin/moderator only).</summary>
+        </member>
+        <member name="M:PrivateApi.Controllers.DisasterController.ListAll(System.Threading.CancellationToken)">
+            <summary>List all disasters regardless of status (admin/moderator only).</summary>
+        </member>
+        <member name="M:PrivateApi.Controllers.DisasterController.ListMine(System.Threading.CancellationToken)">
+            <summary>List disasters submitted by the current user (any status).</summary>
+        </member>
+        <member name="M:PrivateApi.Controllers.DisasterController.Approve(System.String,System.Threading.CancellationToken)">
+            <summary>Approve a pending disaster (admin/moderator only).</summary>
+        </member>
+        <member name="M:PrivateApi.Controllers.DisasterController.Reject(System.String,PrivateApi.Controllers.DisasterController.RejectRequest,System.Threading.CancellationToken)">
+            <summary>Reject a pending disaster with a reason (admin/moderator only).</summary>
+        </member>
+        <member name="M:PrivateApi.Controllers.DisasterController.GetDisaster(System.String,System.Threading.CancellationToken)">
+            <summary>Get a single disaster by slug. Pending/rejected visible only to admin/moderator/submitter.</summary>
+        </member>
+        <member name="M:PrivateApi.Controllers.DisasterController.CreateDisaster(PrivateApi.Controllers.DisasterController.CreateDisasterRequest,System.Threading.CancellationToken)">
+            <summary>Create a new disaster (multipart: title, description, location, severity, photos[]).</summary>
+        </member>
+        <member name="M:PrivateApi.Controllers.DisasterController.UpdateDisaster(System.String,PrivateApi.Controllers.DisasterController.UpdateDisasterRequest,System.Threading.CancellationToken)">
+            <summary>Update an existing disaster by slug.</summary>
+        </member>
+        <member name="M:PrivateApi.Controllers.DisasterController.DeleteDisaster(System.String,System.Threading.CancellationToken)">
+            <summary>Delete a disaster by slug. Submitter can delete own pending submission; admin/moderator can delete anytime.</summary>
+        </member>
+        <member name="T:PrivateApi.Controllers.ResourceController">
+            <summary>
+            Admin endpoints for disaster resources (by item type).
+            </summary>
+        </member>
+        <member name="M:PrivateApi.Controllers.ResourceController.GetResources(System.String,System.Threading.CancellationToken)">
+            <summary>List all resources for a disaster.</summary>
+        </member>
+        <member name="M:PrivateApi.Controllers.ResourceController.Upsert(System.String,System.String,PrivateApi.Controllers.ResourceController.UpsertResourceRequest,System.Threading.CancellationToken)">
+            <summary>Set the quantity for an item type on a disaster (upsert).</summary>
+        </member>
+        <member name="M:PrivateApi.Controllers.ResourceController.Delete(System.String,System.String,System.Threading.CancellationToken)">
+            <summary>Delete an item-type entry from a disaster.</summary>
+        </member>
+    </members>
+</doc>
